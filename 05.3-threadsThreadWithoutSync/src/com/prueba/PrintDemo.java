@@ -1,0 +1,13 @@
+package com.prueba;
+
+class PrintDemo {
+  public void printCount(String threadName) {
+    try {
+      for (int i = 5; i > 0; i--) {
+        System.out.println(String.format("%s --- Counter --- %d", threadName, i));
+      }
+    } catch (Exception e) {
+      System.out.println("Thread  interrupted.");
+    }
+  }
+}
